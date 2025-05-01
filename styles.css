@@ -1,0 +1,135 @@
+/* Base Styles */
+:root {
+    --main-bg-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #505050;
+    --link-color: #000000;
+    --link-hover-color: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.header-text {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Projects Link */
+.projects-link {
+    margin: 2rem 0;
+}
+
+.projects-link a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 2px;
+    transition: color 0.2s ease;
+}
+
+.projects-link a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .header-text {
+        align-items: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .projects-link {
+        text-align: center;
+    }
+} 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Dahleh | Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-item {
+            margin-bottom: 2rem;
+        }
+        .project-item h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--link-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 2px;
+        }
+        .back-link:hover {
+            color: var(--link-hover-color);
+        }
+        .project-links {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+        .project-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .project-links a:hover {
+            color: var(--link-hover-color);
+        }
+        .project-links i {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projects</h1>
+        
+        <div class="project-item">
+            <h2>ORCHID-Notes: Organ Procurement Note De-identification</h2>
+            <p>Developing ORCHID-Notes, the first large-scale dataset of millions of de-identified clinical notes from the U.S. organ procurement system-
+                  enabling research into transplant equity and advancing LLM-based de-identification at scale.</p>
+            <div class="project-links">
+                <a href="https://github.com/odahleh/orchid-notes" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <h2>MIMIC-IID: Probing and Mitigating Bias in the MIMIC-CXR Dataset at Scale</h2>
+            <p>Creating MIMIC-IID, a scalable analysis pipeline that tests IID assumptions in MIMIC-CXR at scale, improving dataset transparency and 
+                fostering equitable AI development in critical care imaging.</p>
+            <div class="project-links">
+                <a href="https://github.com/odahleh/mimic-iid" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <h2>PrivateNLG: Synthetic Data Generation for Mixed-Type Datasets</h2>
+            <p>Engineering a high-throughput deep-generative framework that synthesizes mixed-type (numeric, categorical, and text) tables with preserved
+                 joint distributions and feature dependencies—validated in collaboration with Liberty Mutual to accelerate reliable, scalable machine learning development..</p>
+            <div class="project-links">
+                <a href="https://github.com/odahleh/mimic-iid" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">Home</a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Omar Dahleh</p>
+    </footer>
+</body>
+</html> 
